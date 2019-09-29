@@ -62,8 +62,11 @@ export default {
     login () {
       console.log(this.loginForm)
     },
-    register () {
-      console.log(this.registerForm)
+    async register () {
+      //authストアのregisterアクションを呼び出す
+      await this.$store.disapatch('auth/reguster', this.registerForm)
+      //トップページに移動する
+      this.$router.push('/')
     }
   }
 }
