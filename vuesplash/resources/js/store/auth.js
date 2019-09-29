@@ -8,7 +8,11 @@ const state = {
 }
 
 const getters = {
+<<<<<<< HEAD
   check: state => !! state.user,
+=======
+  check: state => !! state.user ,
+>>>>>>> origin/master
   username: state => state.user ? state.user.name : ''
 }
 
@@ -30,6 +34,7 @@ const mutations = {
 const actions = {
   // 会員登録
   async register (context, data) {
+<<<<<<< HEAD
     context.commit('setApiStatus', null)
     const response = await axios.post('/api/register', data)
 
@@ -95,6 +100,23 @@ const actions = {
 
     context.commit('setApiStatus', false)
     context.commit('error/setCode', response.status, { root: true })
+=======
+    const response = await axios.post('/api/register', data)
+    context.commit('setUser', response.data)
+  },
+  async login (context, data) {
+    const response = await axios.post('/api/login', data)
+    context.commit('setUser', response.data)
+  },
+  async logout (context) {
+    const response = await axios.post('/api/logout')
+    context.commit('setUser', null)
+  },
+  async currentUser (context) {
+    const response = await axios.get('/api/user')
+    const user = response.data || null
+    context.commit('setUser', user)
+>>>>>>> origin/master
   }
 }
 

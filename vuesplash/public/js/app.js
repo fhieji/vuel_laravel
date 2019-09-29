@@ -1911,6 +1911,120 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  computed: {
+    isLogin: function isLogin() {
+      return this.$store.getters['auth/check'];
+    }
+  },
+  methods: {
+    logout: function () {
+      var _logout = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return this.$store.dispatch('auth/logout');
+
+              case 2:
+                this.$router.push('/login');
+
+              case 3:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function logout() {
+        return _logout.apply(this, arguments);
+      }
+
+      return logout;
+    }()
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Navbar.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Navbar.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  computed: {
+    isLogin: function isLogin() {
+      return this.$store.getters['auth/check'];
+    },
+    username: function username() {
+      return this.$store.getters['auth/username'];
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Login.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Login.vue?vue&type=script&lang=js& ***!
@@ -2014,6 +2128,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     };
   },
+<<<<<<< HEAD
   computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])({
     apiStatus: function apiStatus(state) {
       return state.auth.apiStatus;
@@ -2025,6 +2140,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       return state.auth.registerErrorMessages;
     }
   })),
+=======
+>>>>>>> origin/master
   methods: {
     login: function () {
       var _login = _asyncToGenerator(
@@ -2069,10 +2186,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return this.$store.dispatch('auth/register', this.registerForm);
 
               case 2:
+<<<<<<< HEAD
                 if (this.apiStatus) {
                   // トップページに移動する
                   this.$router.push('/');
                 }
+=======
+                this.$router.push('/');
+>>>>>>> origin/master
 
               case 3:
               case "end":
@@ -20401,11 +20522,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _pages_PhotoList_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/PhotoList.vue */ "./resources/js/pages/PhotoList.vue");
 /* harmony import */ var _pages_Login_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/Login.vue */ "./resources/js/pages/Login.vue");
+<<<<<<< HEAD
 /* harmony import */ var _pages_errors_System_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/errors/System.vue */ "./resources/js/pages/errors/System.vue");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store */ "./resources/js/store/index.js");
+=======
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store */ "./resources/js/store/index.js");
+>>>>>>> origin/master
 
 
 
+<<<<<<< HEAD
+=======
+
+ //追加
+// VueRouterプラグインを使用する
+// これによって<RouterView />コンポーネントなどを使うことができる
+>>>>>>> origin/master
 
 
 
@@ -20417,16 +20549,25 @@ var routes = [{
   path: '/login',
   component: _pages_Login_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
   beforeEnter: function beforeEnter(to, from, next) {
+<<<<<<< HEAD
     if (_store__WEBPACK_IMPORTED_MODULE_5__["default"].getters['auth/check']) {
+=======
+    if (_store__WEBPACK_IMPORTED_MODULE_4__["default"].getters['auth/check']) {
+>>>>>>> origin/master
       next('/');
     } else {
       next();
     }
   }
+<<<<<<< HEAD
 }, {
   path: '/500',
   component: _pages_errors_System_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
 }];
+=======
+}]; // VueRouterインスタンスを作成する
+
+>>>>>>> origin/master
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
   routes: routes
@@ -20468,6 +20609,17 @@ var getters = {
     return state.user ? state.user.name : '';
   }
 };
+<<<<<<< HEAD
+=======
+var getters = {
+  check: function check(state) {
+    return !!state.user;
+  },
+  username: function username(state) {
+    return state.user ? state.user.name : '';
+  }
+};
+>>>>>>> origin/master
 var mutations = {
   setUser: function setUser(state, user) {
     state.user = user;
@@ -20493,8 +20645,12 @@ var actions = {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
+<<<<<<< HEAD
               context.commit('setApiStatus', null);
               _context.next = 3;
+=======
+              _context.next = 2;
+>>>>>>> origin/master
               return axios.post('/api/register', data);
 
             case 3:
@@ -20534,7 +20690,10 @@ var actions = {
 
     return register;
   }(),
+<<<<<<< HEAD
   // ログイン
+=======
+>>>>>>> origin/master
   login: function () {
     var _login = _asyncToGenerator(
     /*#__PURE__*/
@@ -20544,6 +20703,7 @@ var actions = {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
+<<<<<<< HEAD
               context.commit('setApiStatus', null);
               _context2.next = 3;
               return axios.post('/api/login', data);
@@ -20572,6 +20732,16 @@ var actions = {
               }
 
             case 10:
+=======
+              _context2.next = 2;
+              return axios.post('/api/login', data);
+
+            case 2:
+              response = _context2.sent;
+              context.commit('setUser', response.data);
+
+            case 4:
+>>>>>>> origin/master
             case "end":
               return _context2.stop();
           }
@@ -20585,7 +20755,10 @@ var actions = {
 
     return login;
   }(),
+<<<<<<< HEAD
   // ログアウト
+=======
+>>>>>>> origin/master
   logout: function () {
     var _logout = _asyncToGenerator(
     /*#__PURE__*/
@@ -20595,6 +20768,7 @@ var actions = {
         while (1) {
           switch (_context3.prev = _context3.next) {
             case 0:
+<<<<<<< HEAD
               context.commit('setApiStatus', null);
               _context3.next = 3;
               return axios.post('/api/logout');
@@ -20618,6 +20792,16 @@ var actions = {
               });
 
             case 10:
+=======
+              _context3.next = 2;
+              return axios.post('/api/logout');
+
+            case 2:
+              response = _context3.sent;
+              context.commit('setUser', null);
+
+            case 4:
+>>>>>>> origin/master
             case "end":
               return _context3.stop();
           }
@@ -20631,7 +20815,10 @@ var actions = {
 
     return logout;
   }(),
+<<<<<<< HEAD
   // ログインユーザーチェック
+=======
+>>>>>>> origin/master
   currentUser: function () {
     var _currentUser = _asyncToGenerator(
     /*#__PURE__*/
@@ -20641,6 +20828,7 @@ var actions = {
         while (1) {
           switch (_context4.prev = _context4.next) {
             case 0:
+<<<<<<< HEAD
               context.commit('setApiStatus', null);
               _context4.next = 3;
               return axios.get('/api/user');
@@ -20665,6 +20853,17 @@ var actions = {
               });
 
             case 11:
+=======
+              _context4.next = 2;
+              return axios.get('/api/user');
+
+            case 2:
+              response = _context4.sent;
+              user = response.data || null;
+              context.commit('setUser', user);
+
+            case 5:
+>>>>>>> origin/master
             case "end":
               return _context4.stop();
           }
