@@ -14,10 +14,12 @@
 </template>
 
 <script>
+
 import Message from './components/Message.vue'
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import { INTERNAL_SERVER_ERROR } from './util'
+
 export default {
   components: {
     Message,
@@ -27,10 +29,12 @@ export default {
   computed: {
     errorCode () {
       return this.$store.state.error.code
+
     }
   },
   watch: {
     errorCode: {
+
       async handler (val) {
         if (val === INTERNAL_SERVER_ERROR) {
           this.$router.push('/500')
@@ -40,6 +44,7 @@ export default {
     },
     $route () {
       this.$store.commit('error/setCode', null)
+
     }
   }
 }
